@@ -73,7 +73,6 @@ header .container {
   font-style: italic;
   font-weight: bold;
   font-size: 1rem;
-  text-transform: capitalize;
   transition: all 0.3s ease;
   box-shadow: 4px 4px 0 0 var(--accent-color);
   cursor: pointer;
@@ -299,8 +298,9 @@ section {
 
 .bullet_list {
   margin-left: 25px;
-  font-size: 1.16rem;
+  font-size: 1.1rem;
   margin-top: 5px;
+  font-weight: bold;
 }
 
 .list_title {
@@ -324,6 +324,8 @@ section {
 }
 
 .flip {
+  /* transition: transform 0.1s;
+  transform-style: preserve-3d; */
   transform: scaleX(-1);
 }
 
@@ -376,4 +378,91 @@ section {
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  color: var(--font-color);
+  text-align: left;
+  font-size: bold;
+  font-weight: bold;
+  font-style: italic;
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  background-color: var(--accent-color);
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 18px;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #b367ff;
+}
+
+.accordion:after {
+  content: '+';
+  font-size: 20px;
+  color: #ffffff !important;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-";
+  color: #ffffff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 5px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.faq_text {
+  width: 100%;
+  border-radius: 4px;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  color: var(--accent-color);
+  accent-color: var(--accent-color);
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.last_btn {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.last_btn_no_radius {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.first_btn {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.join_discord {
+  color: currentcolor;
+  accent-color: var(--accent-color);
+  font-weight: bold;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.join_discord:hover {
+  text-shadow: 0 0 black;
 }
