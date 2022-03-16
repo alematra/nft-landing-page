@@ -1,3 +1,4 @@
+/*
 //Countdown Timer
 const clockdiv = document.getElementById("countdown");
 const revealDateSpan = document.getElementById("revealDate");
@@ -29,3 +30,4 @@ const countdownfunction = setInterval(function () {
     revealDateSpan.innerHTML = m + "/" + d + "/" + y + " at " + h + ":00";
   }
 });
+*/
