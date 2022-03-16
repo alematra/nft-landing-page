@@ -1,7 +1,7 @@
 //Countdown Timer
 const clockdiv = document.getElementById("countdown");
 const revealDateSpan = document.getElementById("revealDate");
-const revealDate = new Date("Mar 20, 2022 8:00:00 PM UTC");
+const revealDate = new Date("Mar 16, 2022 6:00:00 PM UTC");
 y = revealDate.getFullYear();
 m = revealDate.getMonth() + 1;
 d = revealDate.getDate();
